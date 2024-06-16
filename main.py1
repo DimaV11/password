@@ -1,0 +1,10 @@
+import random
+
+all_symbols = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm!?/_.@#-0123456789'
+lenght = int(input('Введите кол-во символов для генерации пароля:'))
+password = ""
+
+for i in range(lenght):
+    password += random.choice(all_symbols)
+
+print(password)
